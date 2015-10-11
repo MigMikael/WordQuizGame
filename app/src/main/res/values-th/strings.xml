@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Word Quiz Game</string>
+    <string name="app_title">เกมทายคำศัพท์ภาษาอังกฤษ</string>
+    <string name="high_score_label">คะแนนสูงสุด</string>
+    <string name="play_game_label">เล่นเกม</string>
+</resources>
