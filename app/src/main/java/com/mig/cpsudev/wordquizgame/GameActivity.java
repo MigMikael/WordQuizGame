@@ -17,22 +17,22 @@ public class GameActivity extends AppCompatActivity {
     private static final String TAG = "GameActivity";
 
     private int mNumChoices;
-    
+
     private ArrayList<String> mFileNameList;
     private ArrayList<String> mQuizWordList;
     private ArrayList<String> mChoiceWordList;
 
     private int mScore;
     private int mTotalGuesses;
-    private String answerFileName;
+    private String mAnswerFileName;
 
-    private Random random;
-    private Handler handler;
+    private Random mRandom;
+    private Handler mHandler;
 
-    private TextView questionNumberTextView;
-    private ImageView questionImageView;
-    private TableLayout buttionTabelLayout;
-    private TextView answerTextView;
+    private TextView mQuestionNumberTextView;
+    private ImageView mQuestionImageView;
+    private TableLayout mButtionTabelLayout;
+    private TextView mAnswerTextView;
 
 
     @Override
@@ -54,5 +54,14 @@ public class GameActivity extends AppCompatActivity {
                 mNumChoices = 6;
                 break;
         }
+
+        setupViews();
+    }
+
+    private void setupViews() {
+        mQuestionNumberTextView = (TextView) findViewById(R.id.questionNumberTextView);
+        mQuestionImageView = (ImageView) findViewById(R.id.questionImageView);
+        mButtionTabelLayout = (TableLayout) findViewById(R.id.buttonTableLayout);
+        mAnswerTextView = (TextView) findViewById(R.id.answerTextView);
     }
 }
